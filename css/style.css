@@ -1,0 +1,114 @@
+@font-face{
+    font-family: "RobotoCondensed-Light";
+    src: url(../font/RobotoCondensed-Light.ttf);
+}
+@font-face{
+    font-family: "DINPro-Light";
+    src: url(../font/DINPro-Light.ttf);
+}
+@font-face{
+    font-family: "RobotoCondensed-Bold";
+    src: url(../font/RobotoCondensed-Bold.ttf)
+}
+@font-face{
+    font-family: "DIN Condensed";
+    src: url(../font/DIN\ Condensed.otf);
+}
+@font-face{
+    font-family: "RobotoCondensed-Regular";
+    src: url(../font/RobotoCondensed-Regular.ttf);
+}
+
+/* clear native ctyle */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+button,input{
+    border: none;
+    background:transparent;
+    outline: none;
+}
+.header-wrap{
+    background:url(../img/header-bg.png) no-repeat;
+    background-size: cover;
+}
+.header{
+    text-align: center;
+    padding-top: 10px;
+}
+.header-button{
+    width: 27px;
+    height: 20px;
+    background: url(../img/burger.png) no-repeat center;
+    cursor: pointer;
+}
+.header-lang__link{
+    display: inline-block; 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    line-height: 30px;
+    font-family: "RobotoCondensed-Light";
+    font-size: 11px;
+    text-transform: uppercase; 
+}
+.active-lang{
+    background-color: #00aeef;
+    color: #fff;
+}
+.header-callback{
+   font-family: "RobotoCondensed-Bold",sans-serif; 
+}
+.header-callback>div{
+    display: inline-block;
+} 
+.code{
+    font-size: 12px;
+}
+.tel{
+    color: #f68428;
+}
+.callback-link{
+    font-family: "DINPro-Light",sans-serif;
+    border-bottom: 1px solid #00aeef;
+    color: #00aeef;
+    font-size: 14px;
+    line-height: 22px;
+}
+/* REASON */
+.reason{
+    text-align: left;
+}
+.reason-title{
+    font:48px/52px "DIN Condensed", sans-serif;
+    color: #0054a6; 
+    margin-bottom: 70px;
+}
+.reason-list{
+    font: 18px "RobotoCondensed-Regular" , sans-serif;
+}
+.reason-list__item{
+    padding: 30px 0 30px 100px;
+    position: relative;
+}
+ 
+.reason-list__item:first-child{
+    background: url(../img/reason-1.png) no-repeat left center;
+}
+.reason-list__item:nth-child(2){
+    background: url(../img/reason-2.png) no-repeat left center;
+}
+.reason-list__item:last-child{
+    background: url(../img/reason-3.png) no-repeat left center;
+}
+ 
