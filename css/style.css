@@ -63,6 +63,18 @@ button,[type="button"]{
 .font-blue{
     color: #0054a6;  
 }
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
+.orange{
+    color: #f68428;
+}
 /* ------------ */
 .header-wrap{
     background:url(../img/header-bg.png) no-repeat;
