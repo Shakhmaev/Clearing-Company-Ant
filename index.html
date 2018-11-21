@@ -27,14 +27,14 @@
             <div><img src="./img/phone.png" alt="Call back" /></div>
             <div>
               <span class="code">044</span> <span class="tel">576-73-77</span>
-              <p><a href="#" class="callback-link">Обратный звонок</a></p>
+              <p><a href="#" class="callback-link font-blue-light">Обратный звонок</a></p>
             </div>
           </div>
         </div>
         <!-- SECTION REASON -->
         <section class="reason row">
           <div class="col-5">
-            <h2 class="section-title">Теперь у вас есть причина не убирать</h2>
+            <h2 class="section-title font-blue">Теперь у вас есть причина не убирать</h2>
             <ul class="reason-list">
               <li class="reason-list__item">
                 <a href="#" class="reason-list__link"
@@ -157,5 +157,150 @@
         <img alt="Муравей Клининг" src="./img/prev-7.jpg" class="preview-img" />
       </div>
     </section>
+    <!-- CALCULATOR -->
+    <section class="calc container">
+      <div class="row justify-content-center text-align-center">
+        <h2 class="section-title col-12">калькулятор стоимости</h2>
+
+        <form class="calc-form col-10" name="calculator" action="#">  
+            <div>
+                <div class="user-question">Убираемая площадь</div>  
+                <div class="user-answer">
+                    <select name="select-area" id="area">
+                    <option value="50">50 m<sup>2</sup></option>
+                    <option value="60">60 m<sup>2</sup></option>
+                    <option value="70">70 m<sup>2</sup></option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="user-question">Убираемая площадь</div> 
+                <div class="user-answer"> 
+                    <input type="radio" name="clean-area" id="room" checked></iput>
+                    <label for="room">Квартира</label>
+                    <input type="radio" name="clean-area" id="house"></iput>
+                    <label for="house">Дом \ Коттедж</label>
+                </div>
+            </div>
+
+            <div>
+                <div class="user-question">Тип убоки</div>
+                <div class="user-answer">
+                    <input type="radio" name="what-clean" id="everyday" checked></iput>
+                    <label for="everyday">Ежедневна</label>
+                    <input type="radio" name="what-clean" id="general"></iput>
+                    <label for="general">Генеральна</label> 
+                    <input type="radio" name="what-clean" id="after"></iput>
+                    <label for="after">После ремонта</label>  
+                </div> 
+            </div>
+
+            <div>
+                <div class="user-question">Количество окон</div>  
+                <div class="user-answer">
+                    <select name="select-area" id="area">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="last-option-box">
+                <div class="user-question">Дополнительно</div>
+                <div class="user-answer multiple"> 
+                    <input type="checkbox" name="what-clean" id="own" checked></iput>
+                    <label for="own">Внутри духовки</label>
+
+                    <input type="checkbox" name="what-clean" id="fridge"></iput>
+                    <label for="fridge">Внутри холодильника</label> 
+
+                    <input type="checkbox" name="what-clean" id="cup"></iput>
+                    <label for="cup">Внутри кухонных шкафов</label>  
+                </div> 
+            </div>
+            <div class="form-result">
+                <p class="accumulation">Ориентировочная стоимость: <span class="font-blue-light">2500 грн</span> </p>
+                <p class="tips font-blue">Точную стоимость менеджер называет после оценки специалиста!</p>
+                <input class="form-send" type="button" value="Заказть уборку"> 
+            </div> 
+        </form>
+      </div>
+    </section>
+    <!-- testimonial -->
+    <div class="testimonial-wrap">
+        <section class="testimonial container">
+            <div class="row justify-content-center">
+                <h2 class="section-title col-8">Наши достижения глазами клиентов</h2>
+                <p class="testimonial-text col-9">Переезжала из дома в квартиру. Заранее рассчитали, что переезд будет длиться 5 часов, а как переехали-не успели испугаться - мне показалось мгновенно и легко за 1.5 часа. Спасибо ребятам за быстроту, оперативность, пунктуальность, незаметность работы, приятных и аккуратных сотрудников. Адекватные цены. Понравилась бумажная форма договора. Думаю у компании не только хорошая репутация (судя по многочисленным отзывам) но и положительная энергия. Спасибо большое! Растите и развивайтесь! Теперь не только Вы с нами но и Мы с Вами!
+                    </p>
+                <p class="testimonial-author font-blue col-4">Виктория - 18.12.2015</p> 
+                <!-- control -->
+                <div class="testimonial-prev"></div>
+                <div class="testimonial-next"></div>
+            </div> 
+        </section>
+    </div>
+    <!-- FAQ -->
+    <div class="faq-wrap">
+        <section class="faq container">
+            <div class="row justify-content-center">
+                <h2 class="section-title col-8">Часто задаваемые вопросы</h2>
+                <div class="faq-accordeon col-12 col-sm-12 col-md-12 col-lg-12">
+                    <!-- input box -->
+                    <input class="q-1" type="radio" name="question" id="q-1">
+                    <input class="q-2" type="radio" name="question" id="q-2" checked>
+                    <input class="q-3" type="radio" name="question" id="q-3">
+                    <input class="q-4" type="radio" name="question" id="q-4">
+                    <input class="q-5" type="radio" name="question" id="q-5">
+                    <input class="q-6" type="radio" name="question" id="q-6">
+
+                    <ul class="faq-list">
+                        <li class="faq-list__item">
+                            <label class="faq-question a-1" for="q-1">Вы работаете в выходные и праздничные дни?</label>
+                            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cum, optio vel neque incidunt nesciunt? Ipsam officiis, voluptas nam accusantium ratione soluta maxime beatae doloribus suscipit quis aliquam mollitia veritatis atque commodi deleniti dicta tempora dignissimos, magni perferendis quisquam accusamus quo blanditiis. Quisquam tenetur incidunt harum aperiam error facilis eaque.</p>
+                        </li>
+                        <li class="faq-list__item">
+                            <label class="faq-question a-2" for="q-2">Можно ли заказать только машину?</label>
+                            <p class="faq-answer">Lorem ipsum dolor sit amet  iciis, voluptas nam accusantium ratione soluta maxime beatae doloribus suscipit quis aliquam mollitia veritatis atque commodi deleniti dicta tempora dignissimos, magni perferendis quisquam accusamus quo blanditiis. Quisquam tenetur incidunt harum aperiam error facilis eaque.</p>
+                        </li>
+                        <li class="faq-list__item">
+                            <label class="faq-question a-3" for="q-3">Страхуются все перевозки или есть какие-то условия?</label>
+                            <p class="faq-answer">Lorem ipsum dolor  cum, optio vel neque incidunt nesciunt? Ipsam officiis, voluptas nam accusantium ratione soluta maxime beatae doloribus suscipit quis aliquam mollitia veritatis atque commodi deleniti dicta tempora dignissimos, magni perferendis quisquam accusamus quo blanditiis. Quisquam tenetur incidunt harum aperiam error facilis eaque.</p>
+                        </li>
+                        <li class="faq-list__item">
+                            <label class="faq-question a-4" for="q-4">Если машина попадет в пробку, измениться ли цена?</label>
+                            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cum, optio vel neque incidunt nesciunt? Ipsam officiis, voluptas nam accusantium ratione soluta maxime beatae doloribus suscipit quis aliquam mollitia veritatis atque commodi deleniti dicta tempora dignissimos, magni perferendis quisquam accusamus quo blanditiis. Quisquam tenetur incidunt harum aperiam error facilis eaque.</p>
+                        </li>
+                        <li class="faq-list__item">
+                            <label class="faq-question a-5" for="q-5">Страхуются все перевозки или есть какие-то условия?</label>
+                            <p class="faq-answer"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto odit porro dignissimos adipisci quaerat saepe voluptas nostrum consequatur vel natus.</p>
+                        </li>
+                        <li class="faq-list__item">
+                            <label class="faq-question a-6" for="q-6">Страхуются все перевозки или есть какие-то условия?</label>
+                            <p class="faq-answer">Lorem ipsum dolor sit amet conse 
+                    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+    </div>
   </body>
 </html>
