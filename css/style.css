@@ -26,6 +26,10 @@
     font-family: "Roboto-Light";
     src: url(../font/Roboto-Light.ttf);
 }
+@font-face{
+    font-family: "Roboto-LightItalic";
+    src: url(../font/Roboto-LightItalic.ttf);
+}
 
 /* clear native ctyle */
 *{
@@ -56,6 +60,7 @@ button,[type="button"]{
     text-transform: uppercase;
     color:#00aeef;
     text-align: center;
+    padding: 0;
 }
 .font-blue-light{
     color: #00aeef;
@@ -114,9 +119,7 @@ button,[type="button"]{
 .code{
     font-size: 12px;
 }
-.tel{
-    color: #f68428;
-}
+ 
 .callback-link{
     font-family: "DINPro-Light",sans-serif;
     border-bottom: 1px solid #00aeef; 
@@ -362,7 +365,8 @@ button,[type="button"]{
     border-radius: 50%;
     background:  #f68428 url(../img/warning.png) no-repeat center;
 }
-.form-send{
+.form-send,
+.discount-button{
     font: 22px "DINPro";
     color: #fff;
     background-color: #f68428;
@@ -411,7 +415,7 @@ button,[type="button"]{
 }
 /* FAQ */
 .faq-wrap{
-    padding-top: 65px;
+    padding: 65px 0 95px;
     background: url(../img/faq-bg.png) no-repeat;
 } 
 .faq-question{
@@ -466,3 +470,97 @@ button,[type="button"]{
     height: auto;
     transition: all .3s linear;
 }
+
+/* discount */
+.discount-wrap{
+    background-color: #b1e2f8;
+    padding: 15px 0;
+}
+ .discount-desc{
+     font: 22px/36px "RobotoCondensed-Light";
+     text-transform: uppercase;
+ }
+ .discount .section-title,
+ .discount-button{
+     margin: 0;
+ }  
+ .discount-size{
+     color: #f68428;
+     font-family:"DIN Condensed";
+     vertical-align: top;
+     font-size: 40px;
+ }
+ .discount-size--big{
+    font-size: 150px;
+    letter-spacing: -21px;
+    vertical-align: top;
+    line-height: 130px;
+    padding-right: 20px;
+ } 
+ .discount-right .section-title{
+     font-size: 38px;
+ }
+ .discount-left{
+     border-right: 2px solid #000;
+     position: relative;
+ }
+ .discount-logo{
+    position: absolute;
+    top: -39%;
+    left: 10%;
+ }
+ /* team */
+ .team{
+     padding: 40px 0;
+ }
+ .team-list__desc{
+     font: 18px/20px "Roboto-LightItalic";
+ }
+ /* add service */
+ .add-service{
+     padding: 40px 0;
+     color: #fff;
+ }
+ .add-service-wrap{
+     background-color: #00aeef;
+ }
+ .add-service .section-title{
+color: #fff;
+ }
+ .add-service__img,
+ .add-service__desc{
+     display: inline-block;
+ }
+ .add-service__desc{
+     font: 24px "DIN Condensed"; 
+ }
+ /* partntership */
+ /* any question  */
+ .any-question-wrap {
+     padding: 45px 0;
+     background-color: #b1e2f8;
+ }
+ .any-question .section-title{
+     margin-bottom: 0;
+ }
+  .section-desc{
+      font: 48px "DIN Condensed";
+      color: #606060;
+      text-transform: uppercase;
+  }
+  .note{
+      font: 18px/50px "DINPro";
+      color: #000;
+
+  }
+  /* footer */
+  .footer{
+      font-family: "DINPro";
+      padding: 42px 0 95px;
+  }
+  .footer-title{
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+  }
+   
