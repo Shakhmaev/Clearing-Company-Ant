@@ -1,6 +1,6 @@
 ### Лендинг пейдж клининговой компании  "Муравей".
 ```
-> bootstrap4
+> bootstrap 4
 > accordeon on pure css
 > custom checkbox/radio
 
