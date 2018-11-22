@@ -85,8 +85,7 @@ button,[type="button"]{
     background:url(../img/header-bg.png) no-repeat;
     background-size: cover;
 }
-.header{
-    text-align: center;
+.header{ 
     padding-top: 10px;
 }
 .header-button{
@@ -106,6 +105,9 @@ button,[type="button"]{
     font-size: 11px;
     text-transform: uppercase; 
 }
+.header-lang__link:hover{
+    box-shadow: 0 0 0 2px #00aeef;
+}
 .active-lang{
     background-color: #00aeef;
     color: #fff;
@@ -118,17 +120,44 @@ button,[type="button"]{
 } 
 .code{
     font-size: 12px;
-}
- 
+} 
 .callback-link{
     font-family: "DINPro-Light",sans-serif;
     border-bottom: 1px solid #00aeef; 
     font-size: 14px;
-    line-height: 22px;
+    line-height: 22px; 
 }
+.header-phone-img{
+    animation: shake 2s linear infinite; 
+}
+@keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-2px, 0, 0);
+      transform: translate3d(-2px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(2px, 0, 0);
+      transform: translate3d(2px, 0, 0);
+    }
+  }
+  
+  
 /* REASON */
-.reason{
-    text-align: left;
+.reason{ 
     padding-bottom: 45px;
 } 
 
@@ -148,6 +177,10 @@ button,[type="button"]{
 }
 .reason-list__item:last-child{
     background: url(../img/reason-3.png) no-repeat left center;
+}
+.reason-list__link:hover{
+    text-shadow: 3px 3px #ccc;
+    transition: all .1s linear;
 }
  /* NAV */
  .nav-wrap{
@@ -177,12 +210,15 @@ button,[type="button"]{
     text-align: left;
     padding-left: 55px;
     padding-right: 10px;
-    flex-basis: calc(100% / 3);
+    /* flex-basis: calc(100% / 3); */
     font-family: "DIN Condensed", sans-serif;
     color: #303030;
     margin-bottom: 35px;
  }
-  
+.feature-list__item:hover .feature-list__title{
+    transform: translateX(3px) scale(1.1);
+    transition: all .3s linear;
+}
  .feature-list__item:first-child{
      background: url(../img/feature-1.png) no-repeat left top;
  }
@@ -214,22 +250,19 @@ button,[type="button"]{
  }
  .wecan-wrap{ 
      background-color: #0054a6;
-     color: #fff;
-     text-align: center;
+     color: #fff; 
      font-family: "DIN Condensed", sans-serif;
  }
- .wecan-title{
-     padding: 25px 0;
-     background: url(../img/we-can.png) no-repeat center;
+ .wecan-title{      
      font-size: 74px; 
  }
- .wecan-what{
-     text-align: left;
+ .wecan-what{ 
      font-size: 28px;
      line-height: 25px;
      padding-left: 30px;
  }
  .wecan-90{
+    display: block;
     position: absolute;
     top: 61px;
     left: -72px;
@@ -242,10 +275,10 @@ button,[type="button"]{
      padding-top: 75px; 
  }
  .was,
- .now{
-     height:460px;
-     overflow: hidden;
-     position: relative;
+ .now { 
+    height: 385px;
+    overflow: hidden;
+    position: relative;
  }
  .was::after,
  .now::after{
@@ -275,10 +308,8 @@ button,[type="button"]{
  .now:hover::after {
     transform: translateX(10px);
     transition: all .3s linear;
- }
-  
+ } 
  .preview-img{
-     width: calc(100% / 7);
      padding: 2px;
  }
  .preview-img:hover{
@@ -287,12 +318,11 @@ button,[type="button"]{
  /* form */
  .calc-form>div{
      margin-bottom: 20px;
- }
-  
+ } 
 .user-question{
-    font: 20px/24px "DIN Condensed";
-    text-align: right; 
+    font: 20px/24px "DIN Condensed"; 
     padding-right: 12px;
+    text-align: right;
 }
 .user-answer{
     font: 16px "DINPro",sans-serif;
@@ -343,8 +373,7 @@ button,[type="button"]{
 .last-option-box label{
     display: block;
 }
-.form-result{
-    text-align: center;
+.form-result{ 
     font-family: "DIN Condensed", sans-serif;
 }
 .accumulation{
@@ -374,6 +403,10 @@ button,[type="button"]{
     border-radius: 5px;
     display: block;
     margin: 0 auto; 
+}
+.form-send:hover, 
+.discount-button:hover{
+box-shadow: 0 0 10px 4px #ccc;
 }
 /* achive */
 .testimonial{
@@ -426,14 +459,18 @@ button,[type="button"]{
     cursor: pointer; 
     position: relative;
 }
+.faq-question:hover{
+    outline: 2px solid #00aeef;
+}
 .faq-question::after{
     position: absolute;
     content: "";
     right: 10px;
-    top: 10px;
+    top: 16px;
     width: 12px;
     height: 12px;
     background: url(../img/plus.png)no-repeat center;
+    
 }
 .faq-answer{
     font: 14px/20px "Roboto-Light";
@@ -516,6 +553,13 @@ button,[type="button"]{
  .team-list__desc{
      font: 18px/20px "Roboto-LightItalic";
  }
+ .team-list__item{
+    transition: all .3s linear; 
+ }
+ .team-list__item:hover{
+     transform: rotate(-2deg);
+     transition: all .3s linear;
+ }
  /* add service */
  .add-service{
      padding: 40px 0;
@@ -533,6 +577,7 @@ color: #fff;
  }
  .add-service__desc{
      font: 24px "DIN Condensed"; 
+     text-transform: uppercase;
  }
  /* partntership */
  /* any question  */
@@ -563,4 +608,248 @@ color: #fff;
       margin-bottom: 20px;
       text-transform: uppercase;
   }
-   
+  .footer-list__link:hover img{
+      transform: translateX(-5px);
+      transition: all .2s linear;
+  }
+
+  /* ------- MEDIA  */
+  /* XS -- smal mobile phone and portrait orientation*/
+  @media(max-width:575px){
+    .reason .section-title{
+        text-align: center;
+    }
+    .feature-list{
+        padding-left: 50px;
+    }
+    .feature-list__item{
+        padding-left: 70px; 
+    }
+    .wecan-wrap{
+        padding-bottom: 15px;
+    }
+    .wecan-title{
+        background:none; 
+    }
+    .wecan-what{
+        text-align: center;
+    }
+    .preview {
+        display: none;
+    }
+    .calc{
+        padding-top: 0;
+    }
+    .calc-form label,
+    .accumulation span{
+        display: block;
+    }
+    
+    .tips::before { 
+        left: -1%;
+    }
+    .faq-question { 
+        padding: 5px 25px 0 0;
+  }
+  .discount-logo{
+      display: none;
+  }
+  .discount-left,
+  .discount-right,
+  .discount-right .section-title{
+      text-align: center;
+      border-right: none;
+  }
+  .discount-button{
+      margin:0 auto ;
+  }
+  .any-question span{
+      display: block;
+  }
+  .footer{
+      padding: 40px;
+  }
+  .footer-title{
+      text-align: center;
+  }
+  .footer-contacts{
+      margin-bottom: 20px;
+  }
+ 
+  }
+/* SM big smartphone and lanscape orientation*/
+  @media(min-width:576px){
+ 
+.nav-list__item{
+    border-left: none;  
+ }
+ .reason .section-title{
+    text-align: center;
+}
+.feature-list{
+    padding-left: 50px;
+}
+.feature-list__item{
+    padding-left: 70px; 
+} 
+.preview {
+    display: none;
+}
+.calc{
+    padding-top: 0;
+}
+.calc-form label{
+    display: block;
+}
+.accumulation span{
+    display: block;
+}
+.wecan-wrap{
+    padding: 0 0 15px 0;
+}
+.tips::before { 
+    left: -6%;
+}
+.testimonial-prev {
+    left: -5%;
+}
+.testimonial-next {
+    right: -5%;
+}
+.faq-question { 
+    padding: 5px 25px 0 0;
+}
+.discount-logo{
+    opacity: 0;
+}
+.discount-left,
+.discount-right,
+.discount-right .section-title{
+  text-align: center;
+  border-right: none;
+}
+.discount-button{
+  margin:0 auto ;
+}
+.any-question span{
+  display: block;
+}
+.footer{
+  padding: 40px;
+}
+.footer-title{
+  text-align: center;
+}
+.footer-contacts{
+  margin-bottom: 20px;
+}
+
+
+  }
+  /* MD tablet*/
+  @media(min-width:768px){
+/* nav list */
+.nav-list__item{ 
+    padding: 0;
+ }
+ .nav-list__link{ 
+    padding: 0; 
+ }
+ .nav-list__link:hover{
+    color: #f68428;
+    background-color: transparent;
+ }
+ .wecan-90 { 
+    top: 75px;
+    left: -50px;
+ }
+ .was,
+ .now{
+     text-align: center;
+     margin-bottom: 7px;
+ }
+ .was::after { 
+    right: 0px;
+}
+.testimonial-prev {
+    left: 0;
+}
+.testimonial-next {
+    right: 0;
+}
+.partntership {
+    padding-top: 40px;
+}
+.faq-question {
+    padding: 10px 15px;
+}
+/* LG laptops and desktop*/
+  @media(min-width:992px){
+    .nav-list__link{ 
+        padding: 10px 15px;
+        border-radius: 3px;  
+     }
+     .nav-list__link:hover{
+        background-color: #f68428;
+        color: #fff;
+     }
+     .reason .section-title{
+        text-align: left;
+    }
+    .wecan-wrap{ 
+       padding-bottom: 0;
+    }
+    .wecan-title{ 
+        background: url(../img/we-can.png) no-repeat center; 
+        padding: 25px 0;
+    }
+    .wecan-what{
+        text-align: left; 
+    }
+    .wecan-90{  
+       display: block;
+       top: 61px;
+       left: -72px; 
+    }
+    .discount-left{
+        border-right: 2px solid #000; 
+        text-align: right;
+    }
+    .discount-right{
+        text-align: left;
+    }
+    .discount-right .section-title {
+        text-align: left; 
+    }
+    .discount-button{
+        margin:0;
+    }
+    .discount-logo{
+        opacity: 1;
+      }
+    }
+    .discount-logo { 
+        top: -10%;
+    }
+    .faq-question {
+        padding: 10px 15px;
+    }
+}
+/* XL big desktop screen*/
+  @media(min-width:1200px){
+    .preview {
+        display: block;
+    }
+    .discount-logo { 
+        top: -39%;
+    }
+    .calc-form label,
+    .accumulation span{
+        display: inline;
+    }
+    .faq-question {
+        padding: 10px 15px;
+    }
+    
+    
+}
